@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nervous System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+
+  <nav x-data="{ open: false }" class="bg-blue-100 shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+   
+        <div class="flex items-center justify-between w-full sm:w-auto">
+          <img src="LOGO.png" alt="Logo" class="h-14 w-auto sm:h-12 sm:mr-3">
+
+        
+          <div class="sm:hidden">
+            <button @click="open = !open" class="text-gray-700 focus:outline-none">
+            
+              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+              </svg>
+            
+              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="hidden sm:flex space-x-6 text-sm font-medium text-gray-700">
+          <a href="SkeletalSystem.html" class="hover:text-blue-600">Skeletal system</a>
+          <a href="MuscularSystem.html" class="hover:text-blue-600">Muscular system</a>
+          <a href="CardiovascularSystem.html" class="hover:text-blue-600">Cardiovascular system</a>
+          <a href="DigestiveSystem.html" class="hover:text-blue-600">Digestive system</a>
+          <a href="NervousSystem.html" class="hover:text-blue-600">Nervous system</a>
+        </div>
+      </div>
+
+
+      <div x-show="open" class="sm:hidden pb-4 space-y-2 text-sm font-medium text-gray-700 text-right">
+        <a href="SkeletalSystem.html" class="block hover:text-blue-600">Skeletal system</a>
+        <a href="MuscularSystem.html" class="block hover:text-blue-600">Muscular system</a>
+        <a href="CardiovascularSystem.html" class="block hover:text-blue-600">Cardiovascular system</a>
+        <a href="DigestiveSystem.html" class="block hover:text-blue-600">Digestive system</a>
+        <a href="NervousSystem.html" class="block hover:text-blue-600">Nervous system</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="px-4 sm:px-6 md:px-10 py-10">
+    <div class="flex flex-col sm:flex-row items-center bg-white shadow-md p-4 rounded-lg">
+      <img src="Untitled (Instagram Post (45)) (4).png" alt="System 1" class="w-24 h-24 object-cover rounded mb-4 sm:mb-0 sm:mr-4">
+      
+      <div class="text-center sm:text-left">
+        <h1 class="text-lg sm:text-xl font-bold">Nervous System</h1>
+        <p class="text-sm text-gray-600 py-2">
+            The nervous system consists of the brain, spinal cord, sensory organs, and all of the nerves that connect these organs with the rest of the body. Together, these organs are responsible for the control of the body and communication among its parts. The brain and spinal cord form the control center known as the central nervous system (CNS), where information is evaluated and decisions made. The sensory nerves and sense organs of the peripheral nervous system (PNS) monitor conditions inside and outside of the body and send this information to the CNS. Efferent nerves in the PNS carry signals from the control center to the muscles, glands, and organs to regulate their functions.
+        </p>
+
+        <h1 class="text-xl py-2 font-bold">Nervous System Anatomy</h1>
+        <p class="text-m text-gray-600 font-medium">
+            Nervous Tissue
+        </p>
+
+        <p class="text-sm  py-1">The majority of the nervous system is tissue made up of two classes of cells: neurons and neuroglia.</p>
+        
+        <h6 class="text-m py-2 text-black-600 font-medium">Neurons</h6>
+        <p class="text-sm  py-1">Neurons, also known as nerve cells, communicate within the body by transmitting electrochemical signals. Neurons look quite different from other cells in the body due to the many long cellular processes that extend from their central cell body. The cell body is the roughly round part of a neuron that contains the nucleus, mitochondria, and most of the cellular organelles. Small tree-like structures called dendrites extend from the cell body to pick up stimuli from the environment, other neurons, or sensory receptor cells. Long transmitting processes called axons extend from the cell body to send signals onward to other neurons or effector cells in the body. </p>
+        <p class="text-sm  py-1">There are 3 basic classes of neurons: afferent neurons, efferent neurons, and interneurons.</p>
+        <ol class="list-decimal list-inside text-sm text-gray-600 space-y-1">
+            <li class="py-2">Afferent neurons. Also known as sensory neurons, afferent neurons transmit sensory signals to the central nervous system from receptors in the body.</li>
+            <li class="py-2">Efferent neurons. Also known as motor neurons, efferent neurons transmit signals from the central nervous system to effectors in the body such as muscles and glands.</li>
+            <li class="py-2">Interneurons. Interneurons form complex networks within the central nervous system to integrate the information received from afferent neurons and to direct the function of the body through efferent neurons.</li>
+        </ol>
+        <h6 class="text-m py-2 text-black-600 font-medium">Neuroglia</h6>
+        <p class="text-sm  py-1">Neuroglia, also known as glial cells, act as the "helper" cells of the nervous system. Each neuron in the body is surrounded by anywhere from 6 to 60 neuroglia that protect, feed, and insulate the neuron. Because neurons are extremely specialized cells that are essential to body function and almost never reproduce, neuroglia are vital to maintaining a functional nervous system.</p>
+        
+        
+<h6 class="text-m py-2 text-black-600 font-medium" >Brain</h6>
+        <p class="text-sm text-gray-600 pt-4">
+            The brain, a soft, wrinkled organ that weighs about 3 pounds, is located inside the cranial cavity, where the bones of the skull surround and protect it. The approximately 100 billion neurons of the brain form the main control center of the body. The brain and spinal cord together form the central nervous system (CNS), where information is processed and responses originate. The brain, the seat of higher mental functions such as consciousness, memory, planning, and voluntary actions, also controls lower body functions such as the maintenance of respiration, heart rate, blood pressure, and digestion.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-gray-100 text-center text-xs sm:text-sm text-gray-600 py-6 px-4">
+    <p>Copyright © AnatoLogic Research 1997 - 2025. All Rights Reserved.</p>
+    <p class="mt-2 max-w-xl mx-auto">
+      AnatoLogic Research does not provide medical advice, diagnosis, or treatment. You must consult your own medical professional.
+    </p>
+  </footer>
+
+</body>
+</html>

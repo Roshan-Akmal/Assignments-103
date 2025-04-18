@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Muscular System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+
+  <nav x-data="{ open: false }" class="bg-blue-100 shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+   
+        <div class="flex items-center justify-between w-full sm:w-auto">
+          <img src="LOGO.png" alt="Logo" class="h-14 w-auto sm:h-12 sm:mr-3">
+
+        
+          <div class="sm:hidden">
+            <button @click="open = !open" class="text-gray-700 focus:outline-none">
+            
+              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+              </svg>
+            
+              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="hidden sm:flex space-x-6 text-sm font-medium text-gray-700">
+          <a href="SkeletalSystem.html" class="hover:text-blue-600">Skeletal system</a>
+          <a href="MuscularSystem.html" class="hover:text-blue-600">Muscular system</a>
+          <a href="CardiovascularSystem.html" class="hover:text-blue-600">Cardiovascular system</a>
+          <a href="DigestiveSystem.html" class="hover:text-blue-600">Digestive system</a>
+          <a href="NervousSystem.html" class="hover:text-blue-600">Nervous system</a>
+        </div>
+      </div>
+
+
+      <div x-show="open" class="sm:hidden pb-4 space-y-2 text-sm font-medium text-gray-700 text-right">
+        <a href="SkeletalSystem.html" class="block hover:text-blue-600">Skeletal system</a>
+        <a href="MuscularSystem.html" class="block hover:text-blue-600">Muscular system</a>
+        <a href="CardiovascularSystem.html" class="block hover:text-blue-600">Cardiovascular system</a>
+        <a href="DigestiveSystem.html" class="block hover:text-blue-600">Digestive system</a>
+        <a href="NervousSystem.html" class="block hover:text-blue-600">Nervous system</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="px-4 sm:px-6 md:px-10 py-10">
+    <div class="flex flex-col sm:flex-row items-center bg-white shadow-md p-4 rounded-lg">
+      <img src="Untitled (Instagram Post (45)) (1).png" alt="System 1" class="w-24 h-24 object-cover rounded mb-4 sm:mb-0 sm:mr-4">
+      
+      <div class="text-center sm:text-left">
+        <h1 class="text-lg sm:text-xl font-bold">Muscular System</h1>
+        <p class="text-sm text-gray-600 py-2">
+            The muscular system is responsible for the movement of the human body. Attached to the bones of the skeletal system are about 700 named muscles that make up roughly half of a person's body weight. Each of these muscles is a discrete organ constructed of skeletal muscle tissue, blood vessels, tendons, and nerves. Muscle tissue is also found inside of the heart, digestive organs, and blood vessels. In these organs, muscles serve to move substances throughout the body.
+        </p>
+        
+        <h1 class="text-xl py-2 font-bold">Muscular System Anatomy</h1>
+        <p class="text-m text-gray-600 font-medium">
+            Muscle Types
+        </p>
+<p class="text-sm text-gray-600 ">
+    There are three types of muscle tissue: Visceral, cardiac, and skeletal.
+</p>
+<h6 class="text-m py-2 text-black-600 font-medium">Visceral Muscle</h6>
+        <p class="text-sm  py-1">Visceral muscle is found inside of organs like the stomach, intestines, and blood vessels. The weakest of all muscle tissues, visceral muscle makes organs contract to move substances through the organ. Because visceral muscle is controlled by the unconscious part of the brain, it is known as involuntary muscle---it cannot be directly controlled by the conscious mind. The term "smooth muscle" is often used to describe visceral muscle because it has a very smooth, uniform appearance when viewed under a microscope. This smooth appearance starkly contrasts with the banded appearance of cardiac and skeletal muscles.</p>
+        
+        <h6 class="text-m py-2 text-black-600 font-medium">Cardiac Muscle</h6>
+        <p class="text-sm  py-1">Found only in the heart, cardiac muscle is responsible for pumping blood throughout the body. Cardiac muscle tissue cannot be controlled consciously, so it is an involuntary muscle. While hormones and signals from the brain adjust the rate of contraction, cardiac muscle stimulates itself to contract. The natural pacemaker of the heart is made of cardiac muscle tissue that stimulates other cardiac muscle cells to contract. Because of its self-stimulation, cardiac muscle is considered to be autorhythmic or intrinsically controlled.</p>
+        
+        <h6 class="text-m py-2 text-black-600 font-medium">Skeletal Muscle</h6>
+        <p class="text-sm  py-1">Skeletal muscle is the only voluntary muscle tissue in the human body---it is controlled consciously. Every physical action that a person consciously performs (e.g. speaking, walking, or writing) requires skeletal muscle. The function of skeletal muscle is to contract to move parts of the body closer to the bone that the muscle is attached to. Most skeletal muscles are attached to two bones across a joint, so the muscle serves to move parts of those bones closer to each other.</p>
+        
+        
+<h6 class="text-m py-2 text-black-600 font-medium" >Muscle Metabolism and Fatigue</h6>
+        <p class="text-sm text-gray-600 pt-4">
+            When muscles run out of energy during either aerobic or anaerobic respiration, the muscle quickly tires and loses its ability to contract. This condition is known as muscle fatigue. A fatigued muscle contains very little or no oxygen, glucose or ATP, but instead has many waste products from respiration, like lactic acid and ADP. The body must take in extra oxygen after exertion to replace the oxygen that was stored in myoglobin in the muscle fiber as well as to power the aerobic respiration that will rebuild the energy supplies inside of the cell. Oxygen debt (or recovery oxygen uptake) is the name for the extra oxygen that the body must take in to restore the muscle cells to their resting state. This explains why you feel out of breath for a few minutes after a strenuous activity---your body is trying to restore itself to its normal state.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-gray-100 text-center text-xs sm:text-sm text-gray-600 py-6 px-4">
+    <p>Copyright © AnatoLogic Research 1997 - 2025. All Rights Reserved.</p>
+    <p class="mt-2 max-w-xl mx-auto">
+      AnatoLogic Research does not provide medical advice, diagnosis, or treatment. You must consult your own medical professional.
+    </p>
+  </footer>
+
+</body>
+</html>

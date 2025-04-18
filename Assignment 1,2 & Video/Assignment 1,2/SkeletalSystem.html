@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skeletal System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+
+  <nav x-data="{ open: false }" class="bg-blue-100 shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+   
+        <div class="flex items-center justify-between w-full sm:w-auto">
+          <img src="LOGO.png" alt="Logo" class="h-14 w-auto sm:h-12 sm:mr-3">
+
+        
+          <div class="sm:hidden">
+            <button @click="open = !open" class="text-gray-700 focus:outline-none">
+            
+              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+              </svg>
+            
+              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="hidden sm:flex space-x-6 text-sm font-medium text-gray-700">
+          <a href="SkeletalSystem.html" class="hover:text-blue-600">Skeletal system</a>
+          <a href="MuscularSystem.html" class="hover:text-blue-600">Muscular system</a>
+          <a href="CardiovascularSystem.html" class="hover:text-blue-600">Cardiovascular system</a>
+          <a href="DigestiveSystem.html" class="hover:text-blue-600">Digestive system</a>
+          <a href="NervousSystem.html" class="hover:text-blue-600">Nervous system</a>
+        </div>
+      </div>
+
+
+      <div x-show="open" class="sm:hidden pb-4 space-y-2 text-sm font-medium text-gray-700 text-right">
+        <a href="SkeletalSystem.html" class="block hover:text-blue-600">Skeletal system</a>
+        <a href="MuscularSystem.html" class="block hover:text-blue-600">Muscular system</a>
+        <a href="CardiovascularSystem.html" class="block hover:text-blue-600">Cardiovascular system</a>
+        <a href="DigestiveSystem.html" class="block hover:text-blue-600">Digestive system</a>
+        <a href="NervousSystem.html" class="block hover:text-blue-600">Nervous system</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="px-4 sm:px-6 md:px-10 py-10">
+    <div class="flex flex-col sm:flex-row items-center bg-white shadow-md p-4 rounded-lg">
+      <img src="Untitled (Instagram Post (45)).png" alt="System 1" class="w-24 h-24 object-cover rounded mb-4 sm:mb-0 sm:mr-4">
+      
+      <div class="text-center sm:text-left">
+        <h1 class="text-lg sm:text-xl font-bold">Skeletal System</h1>
+        <p class="text-sm text-gray-600 py-2">
+          The skeletal system includes all of the bones and joints in the body. Each bone is a complex living organ that is made up of many cells, protein fibers, and minerals. The skeleton acts as a scaffold by providing support and protection for the soft tissues that make up the rest of the body. It also provides attachment points for muscles to allow movements at the joints. New blood cells are produced by the red bone marrow inside our bones. Bones act as the body's warehouse for calcium, iron, and fat.
+        </p>
+        
+        <h1 class="text-xl py-2 font-bold">Skeletal System Anatomy</h1>
+        <p class="text-sm text-gray-600">
+          The adult skeleton consists of 206 bones, divided into:
+        </p>
+
+        <p class="text-sm font-semibold py-1">Axial Skeleton (80 bones):</p>
+        <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+          <li>Skull</li>
+          <li>Hyoid</li>
+          <li>Auditory ossicles</li>
+          <li>Ribs</li>
+          <li>Sternum</li>
+          <li>Vertebral column</li>
+        </ul>
+
+        <p class="text-sm font-semibold pt-4 pb-1">Appendicular Skeleton (126 bones):</p>
+        <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+          <li>Upper limbs</li>
+          <li>Lower limbs</li>
+          <li>Pelvic girdle</li>
+          <li>Pectoral (shoulder) girdle</li>
+        </ul>
+
+        <p class="text-sm text-gray-600 pt-4">
+          Musculoskeletal issues like arthritis or cancer can affect mobility and quality of life. Joint pain may signal other conditions. Consider genetic testing for risks such as hemochromatosis or Gaucher disease. These insights can guide your health and help protect future generations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-gray-100 text-center text-xs sm:text-sm text-gray-600 py-6 px-4">
+    <p>Copyright © AnatoLogic Research 1997 - 2025. All Rights Reserved.</p>
+    <p class="mt-2 max-w-xl mx-auto">
+      AnatoLogic Research does not provide medical advice, diagnosis, or treatment. You must consult your own medical professional.
+    </p>
+  </footer>
+
+</body>
+</html>
