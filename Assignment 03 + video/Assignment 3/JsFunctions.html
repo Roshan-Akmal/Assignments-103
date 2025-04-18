@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WST Assignment 03</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #000000;
+            padding: 10px;
+            color: rgb(255, 255, 255);
+            align-items: center;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .toggle-btn {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .toggle-btn {
+                display: block;
+            }
+        }
+
+        #para1 {
+            padding: 10px;
+            margin-top: 20px;
+            background-color: rgb(252, 242, 188);
+        }
+        button{
+             margin: 2px;
+             background-color: rgb(247, 250, 211);
+             border-radius: 20px;
+             cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div>WST</div>
+    <div class="toggle-btn" onclick="toggleNavbar()">☰</div>
+    <div class="nav-links" id="navLinks">
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JAVASCRIPT</a>
+    </div>
+</div>
+
+<h2>Assignment 3</h2>
+<P>There must be a minimum of 10 JavaScript functions implemented in this assignment.</P>
+
+<p id="para1">Name: Roshan Akmal. <br>Roll number: 23014119-103 <br> BSCS-B (EVE)<br></p>
+
+<button onclick="changeTextColor()">Change Text Color</button>
+<button onclick="changeBgColor()">Change Background Color</button>
+<button onclick="hideElement()">Hide Paragraph</button>
+<button onclick="showElement()">Show Paragraph</button>
+<button onclick="countClicks()">Click Counter</button>
+<button onclick="changeTextAlign()">Align Text Center</button>
+<br><br>
+<button onclick="disableBtn()" id="disableBtn">Disable This Button</button>
+<button onclick="enableBtn()">Enable Button</button>
+<button onclick="appendText()">Append Text</button>
+<button onclick="addBorder()">Add Border</button>
+<p>Click count: <span id="clickCount">0</span></p>
+
+<script>
+
+    function changeTextColor() {
+        document.getElementById("para1").style.color = "red";
+    }
+
+    function changeBgColor() {
+        document.getElementById("para1").style.backgroundColor = "yellow";
+    }
+
+    function hideElement() {
+        document.getElementById("para1").style.visibility = "hidden";
+    }
+
+    function showElement() {
+        document.getElementById("para1").style.visibility = "visible";
+    }
+
+    let count = 0;
+    function countClicks() {
+        count++;
+        document.getElementById("clickCount").innerText = count;
+    }
+
+    function changeTextAlign() {
+        document.getElementById("para1").style.textAlign = "center";
+    }
+
+    function disableBtn() {
+        document.getElementById("disableBtn").disabled = true;
+    }
+
+    function enableBtn() {
+        document.getElementById("disableBtn").disabled = false;
+    }
+
+    function appendText() {
+        document.getElementById("para1").innerText += " I am a Day Scholar!";
+    }
+
+    function addBorder() {
+        document.getElementById("para1").style.border = "2px solid black";
+    }
+
+    function toggleNavbar() {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>
